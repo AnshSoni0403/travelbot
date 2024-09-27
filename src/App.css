@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Main container to hold everything */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  color: white;
+}
+
+/* Logo and Navbar */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px; /* Adjust size according to your logo */
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #ddd;
+}
+
+.chat-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-btn:hover {
+  background-color: #eee;
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 60vh;
+  position: relative;
+}
+
+/* Chat bubble style */
+.chat-bubble {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 20px;
+  margin: 20px;
+  position: absolute;
+}
+
+.bubble-1 {
+  top: 20%;
+  left: 30%;
+}
+
+.bubble-2 {
+  top: 35%;
+  left: 45%;
+}
+
+.bubble-3 {
+  top: 50%;
+  left: 60%;
+}
+
+.chat-bubble p {
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* Footer styling */
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 20%;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.footer-btn {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: #005bb5;
 }
