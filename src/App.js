@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import logo from './logo.png';
+import Chatbox from './Components/Chatbox'; // Import the Chatbox component
 
 const App = () => {
   return (
@@ -7,7 +9,7 @@ const App = () => {
       {/* Navbar */}
       <nav className="navbar">
         <div className="logo">
-          <img src="/travelmate-logo.png" alt="TravelMate Logo" className="logo-img" />
+          <img src={logo} alt="TravelMate Logo" className="logo-img" />
           <span className="logo-text">TravelMate</span>
         </div>
         <ul className="nav-links">
@@ -16,7 +18,7 @@ const App = () => {
           <li>Hotels</li>
           <li>Flights</li>
         </ul>
-        <button className="chat-btn">Chat</button>
+        <Chatbox /> {/* Include the Chatbox component here */}
       </nav>
 
       {/* Hero Section */}
